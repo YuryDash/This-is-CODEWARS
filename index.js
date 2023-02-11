@@ -49,3 +49,16 @@
 // }
 //
 // console.log(highAndLow("8 3 -5 42 -1 0 0 -9 4 7 4 -4"));
+
+
+// // Well of Ideas - Easy Version
+// function well(x) {
+//     let goodCount = 0;
+//     for(let idea of x) {
+//         if((goodCount += idea === "good") > 2) {
+//             break;
+//         }
+//     }
+//     return goodCount ? goodCount === 3 ? "I smell a series!" : "Publish!" : "Fail!";
+// }
+// console.log(well(["bad","bad","good","bad","good","bad","bad","good","good","good","bad","bad"]));
