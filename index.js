@@ -62,3 +62,38 @@
 //     return goodCount ? goodCount === 3 ? "I smell a series!" : "Publish!" : "Fail!";
 // }
 // console.log(well(["bad","bad","good","bad","good","bad","bad","good","good","good","bad","bad"]));
+
+
+// //Sum of Minimums!
+//
+// function sumOfMinimums(arr) {
+// let a = 0;
+//     arr.map( el => {
+//       a += el.sort( (a,b)=> a - b  ).shift()
+//     } )
+// return a
+// }
+// console.log(sumOfMinimums([[11, 12, 14, 54], [67, 89, 90, 56], [7, 9, 4, 3], [9, 8, 6, 7]]));
+
+// //Descending Order
+// function descendingOrder(n){
+// let a = 0
+//     a = n.toString().split('').sort( (a,b)=> b - a ).join('')
+//  return Number(a)
+// }
+// console.log(descendingOrder(123456789));
+
+
+
+// //Get the Middle Character
+// function getMiddle(s) {
+// let x = '';
+//     s.split('').find( el => {
+//        let a = s.length % 2 === 1 ?
+//          x = s.slice(Math.floor(s.length / 2), Math.floor(s.length/2 + 1))
+//            : x = s.slice(Math.floor(s.length / 2) - 1, Math.floor(s.length / 2) + 1)
+//     } )
+//     return x
+// }
+//
+// console.log(getMiddle("testin"));
