@@ -84,7 +84,6 @@
 // console.log(descendingOrder(123456789));
 
 
-
 // //Get the Middle Character
 // function getMiddle(s) {
 // let x = '';
@@ -97,3 +96,30 @@
 // }
 //
 // console.log(getMiddle("testin"));
+
+
+//===================================================================================================================
+// let bb = [];
+// function accum(s) {
+//
+//     s = s.toLowerCase()
+//     let x = [];
+//     s.split('').map((el, index) => {
+//         x += el.repeat(index + 1) + "-";
+//     })
+//      bb =  x.split('-').map( el => { el[0].toUpperCase() + el.unshift() })
+//   return bb
+// }
+//
+// console.log(accum("HbideVbxncC"));//, "H-Bb-Iii-Dddd-Eeeee-Vvvvvv-Bbbbbbb-Xxxxxxxx-Nnnnnnnnn-Cccccccccc-Ccccccccccc")
+//===================================================================================================================
+
+// //List Filtering
+// function filter_list(l) {
+//     let a = []
+//     l.map( el => typeof el === 'number' ? a.push(el) : '' )
+//     return a
+// }
+//
+// console.log(filter_list([1, 2, 'aasf', '1', '123', 123]));
+// console.log( typeof 10)
