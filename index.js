@@ -123,3 +123,24 @@
 //
 // console.log(filter_list([1, 2, 'aasf', '1', '123', 123]));
 // console.log( typeof 10)
+
+
+// //Super Duper Easy
+// const solution = (str, ending) => str.endsWith(ending)
+
+
+// //What's the real floor?
+// function getRealFloor(n) {
+//     return n > 13 ? n - 2 : n > 0 ? n - 1 : n;
+// }
+
+
+//Exes and Ohs
+function XO(str) {
+    debugger
+    let xx = []
+    let oo = []
+str.split('').map( el => el.toLowerCase() == 'x' ? xx.push(el) : el.toLowerCase() == 'o' ? oo.push(el) : console.log(el) )
+    return xx.length === oo.length
+}
+
