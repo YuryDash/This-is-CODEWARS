@@ -145,18 +145,18 @@
 // }
 
 
-// //Find the stray number
-// function stray(numbers) {
-//     const a = numbers.sort();
-//     if (a[0] === a[1]) {
-//         return a[a.length-1]
-//     }  else {
-//         return a[0]
-//     }
-// }
-//
-//
-// console.log(stray([1, 1, 2]));
-// console.log(stray([1, 2, 2]));
-// console.log(stray([1, 2, 1]));
-// console.log(stray([2, 2, 1]));
+//Find the stray number
+function stray(numbers) {
+    const a = numbers.sort();
+    if (a[0] === a[1]) {
+        return a[a.length-1]
+    }  else {
+        return a[0]
+    }
+}
+
+
+console.log(stray([1, 1, 2]));
+console.log(stray([1, 2, 2]));
+console.log(stray([1, 2, 1]));
+console.log(stray([2, 2, 1]));
