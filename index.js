@@ -136,11 +136,27 @@
 
 
 //Exes and Ohs
-function XO(str) {
-    debugger
-    let xx = []
-    let oo = []
-str.split('').map( el => el.toLowerCase() == 'x' ? xx.push(el) : el.toLowerCase() == 'o' ? oo.push(el) : console.log(el) )
-    return xx.length === oo.length
-}
+// function XO(str) {
+//     debugger
+//     let xx = []
+//     let oo = []
+// str.split('').map( el => el.toLowerCase() == 'x' ? xx.push(el) : el.toLowerCase() == 'o' ? oo.push(el) : console.log(el) )
+//     return xx.length === oo.length
+// }
 
+
+// //Find the stray number
+// function stray(numbers) {
+//     const a = numbers.sort();
+//     if (a[0] === a[1]) {
+//         return a[a.length-1]
+//     }  else {
+//         return a[0]
+//     }
+// }
+//
+//
+// console.log(stray([1, 1, 2]));
+// console.log(stray([1, 2, 2]));
+// console.log(stray([1, 2, 1]));
+// console.log(stray([2, 2, 1]));
