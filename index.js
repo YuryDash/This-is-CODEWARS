@@ -145,18 +145,65 @@
 // }
 
 
-//Find the stray number
-function stray(numbers) {
-    const a = numbers.sort();
-    if (a[0] === a[1]) {
-        return a[a.length-1]
-    }  else {
-        return a[0]
-    }
-}
+// //Find the stray number
+// function stray(numbers) {
+//     const a = numbers.sort();
+//     if (a[0] === a[1]) {
+//         return a[a.length - 1]
+//     } else {
+//         return a[0]
+//     }
+// }
+//
+//
+// console.log(stray([1, 1, 2]));
+// console.log(stray([1, 2, 2]));
+// console.log(stray([1, 2, 1]));
+// console.log(stray([2, 2, 1]));
 
 
-console.log(stray([1, 1, 2]));
-console.log(stray([1, 2, 2]));
-console.log(stray([1, 2, 1]));
-console.log(stray([2, 2, 1]));
+
+// function disemvowel(str) {
+//     let arr = ['a', 'A', 'o', 'O', 'e', 'E', 'u', 'U', 'i', 'I']
+//     str = str.split('').filter( el => el !== arr[0] )
+//         .filter( el => el !== arr[1] )
+//         .filter( el => el !== arr[2] )
+//         .filter( el => el !== arr[3] )
+//         .filter( el => el !== arr[4] )
+//         .filter( el => el !== arr[5] )
+//         .filter( el => el !== arr[6] )
+//         .filter( el => el !== arr[7] )
+//         .filter( el => el !== arr[8] )
+//         .filter( el => el !== arr[9] )
+//     return str.join(' ')
+// }
+//
+// console.log(disemvowel("No offense but,\nYour writing is among the worst I've ever read"));
+
+
+// function findShort(s){
+//     return s.split(' ').map( el => el.length).sort( (a,b)=> a - b )[0]
+//
+// // return s
+// }
+//
+// console.log(findShort("bitcoin take over the world maybe who knows perhaps"));
+
+
+// Regex validate PIN code
+// function validatePIN(pin) {
+//     const preparedPin = pin.replace(/\D/g, '');
+//
+//     return preparedPin === pin && (pin.length === 4 || pin.length === 6);
+//
+// }
+
+
+// // Make a function that does arithmetic!
+//
+// const arithmetic = (a, b, operator) => ({
+//     'add': a + b,
+//     'subtract': a - b,
+//     'multiply': a * b,
+//     'divide': a / b,
+// }[operator])
