@@ -207,3 +207,34 @@
 //     'multiply': a * b,
 //     'divide': a / b,
 // }[operator])
+
+//Friend or Foe?
+// function friend(friends){
+//
+//     let a = []
+//     for( let i = 0; i < friends.length; i++){
+//         friends[i].length === 4 ? a.push(friends[i]) : ''
+//     }
+//     return a
+//
+// }
+
+// //Categorize New Member
+// function openOrSenior(data){
+//     let a = []
+// data.map( el => el[0] > 55 && el[1] > 0 ? a.push('Senior') : a.push('Open'))
+//     return a
+// }
+// console.log(openOrSenior([[45, 12], [55, 21], [19, -2], [104, 20]]));
+// console.log(openOrSenior([[3, 12], [55, 1], [91, -2], [53, 23]]));    //,['Open', 'Open', 'Open', 'Open']).log
+// console.log(openOrSenior([[59, 12], [55, -1], [12, -2], [12, 12]]));  //,['Senior', 'Open', 'Open', 'Open']).log
+
+
+
+const shortestWord = (str) => {
+return    str.split(' ').map( el => {
+
+} )
+}
+console.log(shortestWord('Lorem ipsum dolor sit amet.')); // sit
+console.log(shortestWord('consectetur adipisicing elit. rem')); // rem
