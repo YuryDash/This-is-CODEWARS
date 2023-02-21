@@ -231,10 +231,10 @@
 
 
 
-const shortestWord = (str) => {
-return    str.split(' ').map( el => {
-
-} )
-}
-console.log(shortestWord('Lorem ipsum dolor sit amet.')); // sit
-console.log(shortestWord('consectetur adipisicing elit. rem')); // rem
+// const shortestWord = (str) => {
+// return    str.split(' ').map( el => {
+//
+// } )
+// }
+// console.log(shortestWord('Lorem ipsum dolor sit amet.')); // sit
+// console.log(shortestWord('consectetur adipisicing elit. rem')); // rem
