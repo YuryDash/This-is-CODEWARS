@@ -238,3 +238,29 @@
 // }
 // console.log(shortestWord('Lorem ipsum dolor sit amet.')); // sit
 // console.log(shortestWord('consectetur adipisicing elit. rem')); // rem
+
+
+
+// // Sum a list but ignore any duplicates
+// function sumNoDuplicates(numList) {
+// const a = numList.filter( (num, i)=> numList.indexOf(num) === i && numList.lastIndexOf(num)===i )
+//     return a.reduce( (a,b)=> a + b )
+// }
+//
+// console.log(sumNoDuplicates([2,2,2,0,9,8,2]));
+
+
+// //Reverse words
+// const reverseWords = (str) => str.split('').reverse().join('').split(' ').reverse().join(' ')
+//
+//
+// console.log(reverseWords('double  spaced  words'));
+
+// const  basicOp = (operation, value1, value2) => {
+//   return eval(value1 + operation + value2)
+// }
+//
+// console.log(basicOp('+', 4, 7));
+// console.log(basicOp('-', 15, 18));
+// console.log(basicOp('*', 5, 5));
+// console.log(basicOp('/', 49, 7));
