@@ -264,3 +264,13 @@
 // console.log(basicOp('-', 15, 18));
 // console.log(basicOp('*', 5, 5));
 // console.log(basicOp('/', 49, 7));
+
+
+function arithmeticSequenceElements(a, d, n) {
+    let ans = [];
+    for(let i = 0; i < n; i++){
+        ans.push(a+i*d)
+    };
+    return ans.join(', ')
+}
+console.log( arithmeticSequenceElements(100, -10, 10))//, "100, 90, 80, 70, 60, 50, 40, 30, 20, 10")
