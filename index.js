@@ -266,11 +266,22 @@
 // console.log(basicOp('/', 49, 7));
 
 
-function arithmeticSequenceElements(a, d, n) {
-    let ans = [];
-    for(let i = 0; i < n; i++){
-        ans.push(a+i*d)
-    };
-    return ans.join(', ')
-}
-console.log( arithmeticSequenceElements(100, -10, 10))//, "100, 90, 80, 70, 60, 50, 40, 30, 20, 10")
+// function arithmeticSequenceElements(a, d, n) {
+//     let ans = [];
+//     for(let i = 0; i < n; i++){
+//         ans.push(a+i*d)
+//     };
+//     return ans.join(', ')
+// }
+// console.log( arithmeticSequenceElements(100, -10, 10))//, "100, 90, 80, 70, 60, 50, 40, 30, 20, 10")
+
+
+//Keep the Order
+
+const  keepOrder = (ary, val) => [...ary, val].sort( (a,b) => a - b  ).indexOf( val )
+console.log(keepOrder([1, 2, 3, 4, 7], 5));//, 4);
+console.log(keepOrder([1, 2, 3, 4, 7], 0));//, 0);
+console.log(keepOrder([1, 1, 2, 2, 2], 2));//, 2)
+
+
+
