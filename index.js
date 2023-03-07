@@ -277,11 +277,16 @@
 
 
 //Keep the Order
+//
+// const  keepOrder = (ary, val) => [...ary, val].sort( (a,b) => a - b  ).indexOf( val )
+// console.log(keepOrder([1, 2, 3, 4, 7], 5));//, 4);
+// console.log(keepOrder([1, 2, 3, 4, 7], 0));//, 0);
+// console.log(keepOrder([1, 1, 2, 2, 2], 2));//, 2)
 
-const  keepOrder = (ary, val) => [...ary, val].sort( (a,b) => a - b  ).indexOf( val )
-console.log(keepOrder([1, 2, 3, 4, 7], 5));//, 4);
-console.log(keepOrder([1, 2, 3, 4, 7], 0));//, 0);
-console.log(keepOrder([1, 1, 2, 2, 2], 2));//, 2)
 
-
+//Sort array by string length
+// const  sortByLength = (array) => array.sort( (a,b) => a.length - b.length )
+//
+// console.log(sortByLength(["", "Moderately", "Brains", "Pizza"])); //,["", "Pizza", "Brains", "Moderately"]);
+// console.log(sortByLength(["Longer", "Longest", "Short"]));//,["Short", "Longer", "Longest"]);
 
