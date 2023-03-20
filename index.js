@@ -162,7 +162,6 @@
 // console.log(stray([2, 2, 1]));
 
 
-
 // function disemvowel(str) {
 //     let arr = ['a', 'A', 'o', 'O', 'e', 'E', 'u', 'U', 'i', 'I']
 //     str = str.split('').filter( el => el !== arr[0] )
@@ -230,7 +229,6 @@
 // console.log(openOrSenior([[59, 12], [55, -1], [12, -2], [12, 12]]));  //,['Senior', 'Open', 'Open', 'Open']).log
 
 
-
 // const shortestWord = (str) => {
 // return    str.split(' ').map( el => {
 //
@@ -238,7 +236,6 @@
 // }
 // console.log(shortestWord('Lorem ipsum dolor sit amet.')); // sit
 // console.log(shortestWord('consectetur adipisicing elit. rem')); // rem
-
 
 
 // // Sum a list but ignore any duplicates
@@ -290,3 +287,30 @@
 // console.log(sortByLength(["", "Moderately", "Brains", "Pizza"])); //,["", "Pizza", "Brains", "Moderately"]);
 // console.log(sortByLength(["Longer", "Longest", "Short"]));//,["Short", "Longer", "Longest"]);
 
+
+//
+// function gimme (triplet) {
+//     let a = [...triplet]
+//     a.sort((a, b) => a - b)
+//     return triplet.indexOf(a[1])
+// }
+//
+// gimme([-2, -3, -1])//, 0);
+// gimme([-5, -10, -14])//, 1);
+// gimme([-2, -3.2, 1])//, 0);
+// gimme([-5.2, -10.6, 14])//, 0)
+
+function countSheeps(arrayOfSheep) {
+    let lol = 0
+    arrayOfSheep.map(el => {
+        el === true ? lol += 1 : ''
+    })
+    return lol
+}
+
+console.log(countSheeps([true, true, true, false,
+    true, true, true, true,
+    true, false, true, false,
+    true, false, false, true,
+    true, true, true, true,
+    false, false, true, true]));
