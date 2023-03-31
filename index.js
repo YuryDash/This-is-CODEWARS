@@ -300,17 +300,42 @@
 // gimme([-2, -3.2, 1])//, 0);
 // gimme([-5.2, -10.6, 14])//, 0)
 
-function countSheeps(arrayOfSheep) {
-    let lol = 0
-    arrayOfSheep.map(el => {
-        el === true ? lol += 1 : ''
-    })
-    return lol
-}
+// function countSheeps(arrayOfSheep) {
+//     let lol = 0
+//     arrayOfSheep.map(el => {
+//         el === true ? lol += 1 : ''
+//     })
+//     return lol
+// }
+//
+// console.log(countSheeps([true, true, true, false,
+//     true, true, true, true,
+//     true, false, true, false,
+//     true, false, false, true,
+//     true, true, true, true,
+//     false, false, true, true]));
 
-console.log(countSheeps([true, true, true, false,
-    true, true, true, true,
-    true, false, true, false,
-    true, false, false, true,
-    true, true, true, true,
-    false, false, true, true]));
+
+//Sum of two lowest positive integers
+//const sumTwoSmallestNumbers = (numbers) => numbers.sort( (a,b)=> a-b )[0] + numbers[1]
+
+
+// Beginner Series #3 Sum of Numbers
+//
+// const getSum = (a, b) => {
+//     let x = 0
+//     let y = 0
+//     let z = 0
+//     if (a > b){
+//         x = a
+//         y = b
+//     } else {
+//         x = b
+//         y = a
+//     }
+//
+//     for(let i = y; i <= x; i++){
+//         z += i
+//     }
+//     return z
+// }
