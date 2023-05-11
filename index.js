@@ -341,20 +341,25 @@
 // }
 
 //Sorted? yes? no? how?
-function isSortedAndHow(array) {
-    let a = [...array]
-    a.sort((a,b)=> a - b )
-    console.log(a)
-    console.log(array)
+// function isSortedAndHow(array) {
+//     let a = [...array]
+//     a.sort((a,b)=> a - b )
+//     console.log(a)
+//     console.log(array)
+//
+//     if(array[0] === a[0] && array[array.length -1] === a[a.length -1]){
+//         return "yes, ascending"
+//     } else if (array[array.length -1] === a[0] && array[0] === a[a.length -1]){
+//         return "yes, descending"
+//     } else {
+//         return "no"
+//     }
+// }
+//
+// console.log(isSortedAndHow([15, 7, 3, -8]));//, 'yes, descending')
+// console.log(isSortedAndHow([4, 2, 30]));//, no)
 
-    if(array[0] === a[0] && array[array.length -1] === a[a.length -1]){
-        return "yes, ascending"
-    } else if (array[array.length -1] === a[0] && array[0] === a[a.length -1]){
-        return "yes, descending"
-    } else {
-        return "no"
-    }
-}
 
-console.log(isSortedAndHow([15, 7, 3, -8]));//, 'yes, descending')
-console.log(isSortedAndHow([4, 2, 30]));//, no)
+// // Remove All The Marked Elements of a List
+//  const lol=(integer_list, values_list)=>integer_list.filter(v => !values_list.includes(v))
+// console.log(lol([1, 2, 3, 4, 5, 6, 7], [1,3,4,2]));
