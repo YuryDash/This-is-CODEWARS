@@ -363,3 +363,33 @@
 // // Remove All The Marked Elements of a List
 //  const lol=(integer_list, values_list)=>integer_list.filter(v => !values_list.includes(v))
 // console.log(lol([1, 2, 3, 4, 5, 6, 7], [1,3,4,2]));
+
+// const outer = document.querySelector('#outer');
+// const inner = document.querySelector('#inner');
+//
+// outer.addEventListener( 'click', (event)=> {
+//     console.log(event.target); // <button id="inner">Click me</button>
+//     // console.log(event.currentTarget); // <button id="inner">Click me</button>
+// } )
+//
+// inner.addEventListener('click', (event) => {
+//     console.log(event.target); // <button id="inner">Click me</button>
+//     // console.log(event.currentTarget); // <button id="inner">Click me</button>
+// });
+
+
+// function likeOrDislike(buttons) {
+//     let Nothing = 'Nothing'
+//     for ( let i = 0; i < buttons.length; i++ ){
+//         buttons[i] === Nothing ? Nothing = "Nothing" : Nothing = buttons[i]
+//     }
+// return Nothing
+// }
+//
+// console.log(likeOrDislike(['Dislike', 'Dislike']));//, Nothing
+// console.log(likeOrDislike(['Like', 'Like', 'Like']));//, Like
+// console.log(likeOrDislike(['Like', 'Dislike']));//, Dislike
+// console.log(likeOrDislike(['Dislike', 'Like', 'Dislike']));//, Dislike
+// console.log(likeOrDislike(['Like', 'Like', 'Dislike', 'Like', 'Like', 'Like', 'Like', 'Dislike']));//, Dislike
+// console.log(likeOrDislike([]));//, Nothing );
+
