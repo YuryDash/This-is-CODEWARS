@@ -393,3 +393,37 @@
 // console.log(likeOrDislike(['Like', 'Like', 'Dislike', 'Like', 'Like', 'Like', 'Like', 'Dislike']));//, Dislike
 // console.log(likeOrDislike([]));//, Nothing );
 
+
+
+// function nbDig(n, d) {
+//     const myFavouriteArr = []
+//     let a = 0
+// for(let i = 0; i <= n; i++){
+//     myFavouriteArr.push(i**2)
+//     }
+//  myFavouriteArr.join('').split('').map(el => Number(el) === d ? a += 1 : '')
+// return a
+// }
+//
+// console.log(nbDig(5750, 0));//,  4700, "n = 5750, d = 0");
+// console.log(nbDig(11011, 2));//,  9481, "n = 11011, d = 2");
+// console.log(nbDig(12224, 8));//,  7733, "n = 12224, d = 8");
+// console.log(nbDig(11549, 1));//, 11905
+
+
+
+// function calc_ms(n) {
+//     let yo = 0
+//     if(n === 0) return 1
+// for (let i = 0; i < n; i++){
+//     i === 0 ? yo +=20 : yo *= 20
+// }
+// return yo
+// }
+//
+// console.log(calc_ms(0));//
+// console.log(calc_ms(1));//20
+// console.log(calc_ms(2));//400
+// console.log(calc_ms(3));//8000
+// console.log(calc_ms(4));//160000
+// console.log(calc_ms(5));//3200000
