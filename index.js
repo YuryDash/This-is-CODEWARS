@@ -394,7 +394,6 @@
 // console.log(likeOrDislike([]));//, Nothing );
 
 
-
 // function nbDig(n, d) {
 //     const myFavouriteArr = []
 //     let a = 0
@@ -409,7 +408,6 @@
 // console.log(nbDig(11011, 2));//,  9481, "n = 11011, d = 2");
 // console.log(nbDig(12224, 8));//,  7733, "n = 12224, d = 8");
 // console.log(nbDig(11549, 1));//, 11905
-
 
 
 // function calc_ms(n) {
@@ -428,34 +426,48 @@
 // console.log(calc_ms(4));//160000
 // console.log(calc_ms(5));//3200000
 
-function shorterestTime(n, m, speeds) {
-  if(n===0) return 0;
-  let walk = (n)*speeds[3]
-  let lift;
-  let debilTvoujMother;
-  if(n>m){
-  let floors = n-m
-   lift = speeds[0]*floors+speeds[1]+speeds[2] + (n)*speeds[0] +speeds[1];
-  debilTvoujMother = speeds[3]*floors+speeds[1]+speeds[2] + (m)*speeds[0] +speeds[1];
- }
-   else if(m>n){
-    let floors = m-n
-    lift = speeds[0]*floors+speeds[1]+speeds[2] + (n)*speeds[0] +speeds[1] 
-    debilTvoujMother = speeds[3]*floors+speeds[1]+speeds[2] + (m)*speeds[0] +speeds[1];
-}
-  else {
-        lift = speeds[1]+speeds[2] + (n)*speeds[0] +speeds[1]
-        debilTvoujMother = lift;
-}
-console.log(lift,walk,debilTvoujMother)
-return Math.min(walk,lift,debilTvoujMother)
+// function shorterestTime(n, m, speeds) {
+//   if(n===0) return 0;
+//   let walk = (n)*speeds[3]
+//   let lift;
+//   let debilTvoujMother;
+//   if(n>m){
+//   let floors = n-m
+//    lift = speeds[0]*floors+speeds[1]+speeds[2] + (n)*speeds[0] +speeds[1];
+//   debilTvoujMother = speeds[3]*floors+speeds[1]+speeds[2] + (m)*speeds[0] +speeds[1];
+//  }
+//    else if(m>n){
+//     let floors = m-n
+//     lift = speeds[0]*floors+speeds[1]+speeds[2] + (n)*speeds[0] +speeds[1]
+//     debilTvoujMother = speeds[3]*floors+speeds[1]+speeds[2] + (m)*speeds[0] +speeds[1];
+// }
+//   else {
+//         lift = speeds[1]+speeds[2] + (n)*speeds[0] +speeds[1]
+//         debilTvoujMother = lift;
+// }
+// console.log(lift,walk,debilTvoujMother)
+// return Math.min(walk,lift,debilTvoujMother)
+// }
+//
+// console.log(shorterestTime(4, 5, [1, 2, 3, 10]));//,12);
+// console.log(shorterestTime(0, 5, [1, 2, 3, 10]))//,0);
+// console.log(shorterestTime(4, 4, [1, 2, 3, 10]))//,11);
+// console.log(shorterestTime(1, 1, [1, 2, 3, 10]))//,8);
+// console.log(shorterestTime(1, 1, [2, 3, 4, 10]))//,10);
+// console.log(shorterestTime(4, 3, [1, 2, 3, 10]))//,12);
+// console.log(shorterestTime(4, 3, [2, 3, 4, 5]))//,20);
+// console.log(shorterestTime(7, 6, [3, 1, 1, 4]))//,25);
+
+function makeLatinSquare(n) {
+    let result = [];
+    for (let i = 0; i < n; i++) {
+        result[i] = [];
+        for (let j = 0; j < n; j++) {
+            result[i][j] = (i + j) % n + 1;
+        }
+    }
+    return result;
 }
 
-console.log(shorterestTime(4, 5, [1, 2, 3, 10]));//,12);
-console.log(shorterestTime(0, 5, [1, 2, 3, 10]))//,0);
-console.log(shorterestTime(4, 4, [1, 2, 3, 10]))//,11);
-console.log(shorterestTime(1, 1, [1, 2, 3, 10]))//,8);
-console.log(shorterestTime(1, 1, [2, 3, 4, 10]))//,10);
-console.log(shorterestTime(4, 3, [1, 2, 3, 10]))//,12);
-console.log(shorterestTime(4, 3, [2, 3, 4, 5]))//,20);
-console.log(shorterestTime(7, 6, [3, 1, 1, 4]))//,25);
+
+console.log(makeLatinSquare(15));
