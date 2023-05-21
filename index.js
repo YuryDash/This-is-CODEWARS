@@ -458,16 +458,44 @@
 // console.log(shorterestTime(4, 3, [2, 3, 4, 5]))//,20);
 // console.log(shorterestTime(7, 6, [3, 1, 1, 4]))//,25);
 
-function makeLatinSquare(n) {
-    let result = [];
-    for (let i = 0; i < n; i++) {
-        result[i] = [];
-        for (let j = 0; j < n; j++) {
-            result[i][j] = (i + j) % n + 1;
-        }
+// function makeLatinSquare(n) {
+//     let result = [];
+//     for (let i = 0; i < n; i++) {
+//         result[i] = [];
+//         for (let j = 0; j < n; j++) {
+//             result[i][j] = (i + j) % n + 1;
+//         }
+//     }
+//     return result;
+// }
+//
+//
+// console.log(makeLatinSquare(15));
+
+
+
+//Running out of space
+function spacey(array) {
+let lolStr = ''
+    let newArr = []
+    for(let i = 0; i < array.length; i++) {
+        lolStr += array[i]
+        newArr.push(lolStr)
     }
-    return result;
+return newArr
 }
 
+console.log(spacey(['kevin', 'has', 'no', 'space']));//, [ 'kevin', 'kevinhas', 'kevinhasno', 'kevinhasnospace']);
+console.log(spacey(['this', 'cheese', 'has', 'no', 'holes']));//, ['this','thischeese','thischeesehas','thischeesehasno','thischeesehasnoholes']
 
-console.log(makeLatinSquare(15));
+//primer
+// function printNumbersWith5(n) {
+//     console.log('lalalalla')
+//     for (let i = 1; i <= 15; i++) {
+//         if (String(i).includes(i.toString()) && i >= 1 && i <= 15) {
+//             console.log(i);
+//         }
+//     }
+// }
+//
+// printNumbersWith5(5);
