@@ -473,20 +473,19 @@
 // console.log(makeLatinSquare(15));
 
 
-
 //Running out of space
-function spacey(array) {
-let lolStr = ''
-    let newArr = []
-    for(let i = 0; i < array.length; i++) {
-        lolStr += array[i]
-        newArr.push(lolStr)
-    }
-return newArr
-}
-
-console.log(spacey(['kevin', 'has', 'no', 'space']));//, [ 'kevin', 'kevinhas', 'kevinhasno', 'kevinhasnospace']);
-console.log(spacey(['this', 'cheese', 'has', 'no', 'holes']));//, ['this','thischeese','thischeesehas','thischeesehasno','thischeesehasnoholes']
+// function spacey(array) {
+// let lolStr = ''
+//     let newArr = []
+//     for(let i = 0; i < array.length; i++) {
+//         lolStr += array[i]
+//         newArr.push(lolStr)
+//     }
+// return newArr
+// }
+//
+// console.log(spacey(['kevin', 'has', 'no', 'space']));//, [ 'kevin', 'kevinhas', 'kevinhasno', 'kevinhasnospace']);
+// console.log(spacey(['this', 'cheese', 'has', 'no', 'holes']));//, ['this','thischeese','thischeesehas','thischeesehasno','thischeesehasnoholes']
 
 //primer
 // function printNumbersWith5(n) {
@@ -499,3 +498,63 @@ console.log(spacey(['this', 'cheese', 'has', 'no', 'holes']));//, ['this','thisc
 // }
 //
 // printNumbersWith5(5);
+
+// function reverseInBase(n, b) {
+//     let result = 0;
+//     let power = 1;
+//     while (n > 0) {
+//         result = result * b + (n % b);
+//         n = Math.floor(n / b);
+//         power *= 10;
+//         console.log('132123')
+//     }
+//     return result;
+// }
+// console.log(reverseInBase(12, 2)); // 3
+// console.log(reverseInBase(10, 5)); // 2
+// console.log(reverseInBase(45, 30)); // 451
+// console.log(reverseInBase(3, 4)); // 3
+// console.log(reverseInBase(5, 1)); // 5
+
+
+// function alternate(n, firstValue, secondValue){
+//     let arr = []
+//     for (let i = 0; i < n; i++){
+//         i%2 ? arr.push(secondValue): arr.push(firstValue)
+//     }
+//     return arr
+// }
+//
+// console.log(alternate(10, 'lol', 'kek'));
+// console.log(alternate(12, 'lola', 'keka'));
+// console.log(alternate(5, 'lolo', 'keko'));
+// console.log(alternate(6, false, true));
+
+
+// function height(n) {
+//     let res = [2000000]
+//     for (let i = 0; i < n; i++) {
+//         res.push(res[i] / 2.5)
+//     }
+//     return res.reduce((a, b) => a + b)
+// }
+
+// function height(n) {
+//     let a = 2000000
+//     let b = 2000000
+//     for (let i = 0; i < n; i++) {
+//         b = b / 2.5
+//         a += b
+//     }
+//     return a.toFixed(3)
+// }
+//
+// console.log(height(7));
+
+
+// Find the middle element 7q
+// function gimme (triplet) {
+//   let a = [...triplet]
+//   a.sort( (a,b)=> a - b )
+//   return triplet.indexOf(a[1])
+// }
