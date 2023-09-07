@@ -558,3 +558,25 @@
 //   a.sort( (a,b)=> a - b )
 //   return triplet.indexOf(a[1])
 // }
+// площадь круга
+// const circleArea = function(radius) {
+//   if (typeof radius !== 'number' || isNaN(radius)) {
+//     return false;
+//   } else {
+//     return +(radius ** 2 * Math.PI).toFixed(2);
+//   }
+// };
+
+// Descending Order 7kyu
+// const descendingOrder = (n) => +(Array.from(String(n)).sort((a,b)=>b-a).join(''))
+
+//Highest and Lowest 7kyu
+// const highAndLow  = (numbers) => {
+//   let a = numbers.split(' ').sort((a,b)=>b-a)
+//   return `${a[0]} ${a[a.length -1]}`
+// }
+
+// summ of odd number
+// function rowSumOddNumbers(n) {
+//   return n ** 3
+//   }
