@@ -591,3 +591,60 @@
 //     return str.slice(0, maxLength - 3) + '...';
 //   }
 // }
+
+//Find the next perfect square!
+// function findNextSquare(sq) {
+//   if (Number.isInteger(Math.sqrt(sq))) {
+//     let nextSq = sq + 1;
+//     while (!Number.isInteger(Math.sqrt(nextSq))) {
+//       nextSq++;
+//     }
+//     return nextSq;
+//   } else {
+//     return -1;
+//   }
+// }
+//Sum of two lowest positive integers 7kyu
+// function sumTwoSmallestNumbers(numbers) {
+//  let arr =  numbers.filter( el => el > 0 && Number.isInteger(el)).sort((a,b) => a-b)
+//     return arr[0] + arr[1]
+// }
+//Delete occurrences of an element if it occurs more than n times, 6kyu
+
+// function deleteNth(arr, N) {
+//     const result = [];
+//     const countMap = {};
+//
+//     for (let i = 0; i < arr.length; i++) {
+//         const num = arr[i];
+//         if (countMap[num] === undefined) {
+//             countMap[num] = 1;
+//             result.push(num);
+//         } else {
+//             if (countMap[num] < N) {
+//                 countMap[num]++;
+//                 result.push(num);
+//             }
+//         }
+//     }
+//     return result;
+// }
+
+//5kyu Human Readable Time
+// function humanReadable (seconds) {
+//     const hours = Math.floor(seconds / 3600);
+//     const minutes = Math.floor((seconds % 3600) / 60);
+//     const sec = seconds % 60;
+//
+//     const resHours = String(hours).padStart(2, '0');
+//     const resMinutes = String(minutes).padStart(2, '0');
+//     const resSeconds = String(sec).padStart(2, '0');
+//
+//     return resHours + ':' + resMinutes + ':' + resSeconds
+// }
+// console.log(humanReadable(0))//, '00:00:00', 'humanReadable(0)');
+// console.log(humanReadable(59))//, '00:00:59', 'humanReadable(59)');
+// console.log(humanReadable(60))//, '00:01:00', 'humanReadable(60)');
+// console.log(humanReadable(90))//, '00:01:30', 'humanReadable(90)');
+// console.log(humanReadable(3599))//, '00:59:59', 'humanReadable(3599)');
+// console.log(humanReadable(3600))//01:00:00', 'humanReadable(3600)');
