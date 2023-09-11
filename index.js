@@ -642,9 +642,29 @@
 //
 //     return resHours + ':' + resMinutes + ':' + resSeconds
 // }
-// console.log(humanReadable(0))//, '00:00:00', 'humanReadable(0)');
-// console.log(humanReadable(59))//, '00:00:59', 'humanReadable(59)');
-// console.log(humanReadable(60))//, '00:01:00', 'humanReadable(60)');
-// console.log(humanReadable(90))//, '00:01:30', 'humanReadable(90)');
-// console.log(humanReadable(3599))//, '00:59:59', 'humanReadable(3599)');
-// console.log(humanReadable(3600))//01:00:00', 'humanReadable(3600)');
+
+// drop caps
+// function dropCap(n) {
+//     const arrWords =  n.split(' ')
+//     return arrWords.map(el => el.length > 2 ? el[0].toUpperCase() + el.slice(1).toLowerCase() : el).join(' ')
+// }
+
+//count characters in your string
+// function count(string) {
+//     const obj = {}
+//     string.split('').forEach( el => obj[el] === undefined ? obj[el] = 1 : obj[el] ++)
+//     return obj;
+// }
+// function countAkbar(string) {
+//     let a = {}
+//     for(let i = 0; i<string.length; i++) {
+//         let j = string[i]
+//         if(a[j]===undefined){
+//             a[j] = 1;
+//         }
+//         else {
+//             a[j]++
+//         }
+//     }
+//     return a;
+// }
