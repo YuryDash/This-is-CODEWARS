@@ -668,3 +668,17 @@
 //     }
 //     return a;
 // }
+
+//7 kyu Beginner Series #3 Sum of Numbers
+// function getSum(a, b){
+// let res = a > b ? [a,b] : [b,a]
+// let j
+//     if( res[0] === res[1]){
+//         return a
+//     } else {
+//         for (let i = res[0]; i < res[1]; i++){
+//             j += i
+//         }
+//     }
+//     return j
+// }
