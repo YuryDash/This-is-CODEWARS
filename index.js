@@ -670,20 +670,25 @@
 // }
 
 //7 kyu Beginner Series #3 Sum of Numbers
-function getSum(a, b){
-let res = 0
-    if( a === b){
-        return a
-    } else if (a < b)  {
-        for (let i = a; i <= b; i++){
-            res +=i
-        }
-    } else {
-        for (let i = b; i <= a; i++){
-            res +=i
-        }
-    }
-    return res
-}
-
-console.log(getSum(5,-1))
+// function getSum(a, b){
+// let res = 0
+//     if( a === b){
+//         return a
+//     } else if (a < b)  {
+//         for (let i = a; i <= b; i++){
+//             res +=i
+//         }
+//     } else {
+//         for (let i = b; i <= a; i++){
+//             res +=i
+//         }
+//     }
+//     return res
+// }
+//
+// console.log(getSum(5,-1))
+//формула арифметичеческий пригриссии
+// function getSum3(a, b)
+// {
+//     return ((Math.abs(a - b) + 1) * (a + b)) / 2;
+// }
