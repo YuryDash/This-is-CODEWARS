@@ -692,3 +692,24 @@
 // {
 //     return ((Math.abs(a - b) + 1) * (a + b)) / 2;
 // }
+
+
+// function wheatFromChaff(values) {
+//     let left = 0;
+//     let right = values.length - 1;
+//     while (left < right) {
+//         while (left < right && values[left] < 0) {
+//             left++;
+//         }
+//         while (left < right && values[right] >= 0) {
+//             right--;
+//         }
+//         if (left < right) {
+//             let temp = values[left];
+//             values[left] = values[right];
+//             values[right] = temp;
+//             left++;
+//             right--;
+//         }
+//     }
+// }
