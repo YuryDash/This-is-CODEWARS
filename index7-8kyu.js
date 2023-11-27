@@ -1,4 +1,4 @@
-//
+//8-7 kyu
 // // при помощи вычислительных выражений найти наибольшую сумму чисел а В с
 // function expressionMatter(a, b, c) {
 //     return Math.max(
