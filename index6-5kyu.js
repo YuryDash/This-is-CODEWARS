@@ -17,20 +17,41 @@
 // }
 
 //The Hashtag Generator kyu5
-let o = "a".repeat(139)//, "#A" + "a".repeat(138)//, "Should work")
-let p = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"//, false, "Too long")
-function generateHashtag(str) {
-    if (str.trim() === '') return false;
+// function generateHashtag(str) {
+//     if (str.trim() === '') return false;
+//
+//     const strCamel = str
+//         .split(' ')
+//         .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+//         .join('');
+//
+//     const strHash = `#${strCamel.trim()}`;
+//
+//     return strHash.length > 140 ? false : strHash;
+// }
+//
+// console.log(generateHashtag(o) + '  o');
+// console.log(generateHashtag(p) + ' p');
 
-    const strCamel = str
-        .split(' ')
-        .map(word => word.charAt(0).toUpperCase() + word.slice(1))
-        .join('');
-
-    const strHash = `#${strCamel.trim()}`;
-
-    return strHash.length > 140 ? false : strHash;
-}
-
-console.log(generateHashtag(o) + '  o');
-console.log(generateHashtag(p) + ' p');
+// Next bigger number with the same digits
+// function nextBigger(n){
+//     let digits = n.toString().split('');
+//     let len = digits.length;
+//     for(let i = len-1; i > 0; i--){
+//         if(digits[i] > digits[i-1]){
+//             let max = digits[i];
+//             let idx = i;
+//             for(let j = i; j < len; j++){
+//                 if(digits[j] > digits[i-1] && digits[j] <= max){
+//                     max = digits[j];
+//                     idx = j;
+//                 }
+//             }
+//             [digits[i-1], digits[idx]] = [digits[idx], digits[i-1]];
+//             let sortedRightPart = digits.slice(i).sort((a, b) => a - b);
+//             let result = parseInt(digits.slice(0, i).concat(sortedRightPart).join(''));
+//             return result;
+//         }
+//     }
+//     return -1;
+// }
