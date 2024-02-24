@@ -32,6 +32,7 @@
 //
 // console.log(generateHashtag(o) + '  o');
 // console.log(generateHashtag(p) + ' p');
+//============================================================================================
 
 // Next bigger number with the same digits
 // function nextBigger(n){
@@ -54,4 +55,22 @@
 //         }
 //     }
 //     return -1;
+// }
+//============================================================================================
+//5 kyu
+// Extract the domain name from a URL
+//DONE WITHOUT REGEX!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! :3
+// function domainName(url){
+// const urlInArray = url.split('http://').join('').split('www.').join('').split('https://').join('')
+//     const domainName = [];
+//     (function filteredFn(array)  {
+//        for (let a = 0; a <=array.length; a++) {
+//            if (array[a] !== '.'){
+//                domainName.push(array[a])
+//            } else {
+//                return
+//            }
+//        }
+//     })(urlInArray)
+//     return domainName.join('')
 // }
