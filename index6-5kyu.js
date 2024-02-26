@@ -74,3 +74,23 @@
 //     })(urlInArray)
 //     return domainName.join('')
 // }
+
+// function latestClock(a, b, c, d) {
+//     let nums = [a, b, c, d];
+//     nums.sort((a, b) => b - a); //1
+//     for (let i = 23; i >= 0; i--) { //2
+//         for (let j = 59; j >= 0; j--) { //3
+//             let hours = i < 10 ? '0' + i : i.toString();
+//             let minutes = j < 10 ? '0' + j : j.toString();
+//             let time = hours + minutes;
+//             if (nums.every(num => time.includes(num.toString()) && (time.match(new RegExp(num.toString(), 'g')) //4
+//                 || []).length === (nums.join('').match(new RegExp(num.toString(), 'g')) || []).length)) {
+//                 return hours + ':' + minutes;
+//             }
+//         }
+//     }
+//     return 'Невозможно составить время';
+// }
+// 1 сортировка, 2 первый цикл начинается с 23 и идет на уменьшение, 3 делает тожесамое но на каждый час.
+// 4 проверяет строка minutes num так же создается проверка regex если всё верно выводит время в формате 'hh':'mm'
+
