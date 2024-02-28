@@ -111,3 +111,18 @@
 //     return result;
 // }
 //[3,2,3,6,4,1,2,3,2,1,2,2,2,1]), {pos:[3,7,10], peaks:[6,3,2]})
+
+function stripUrlParams(url, paramsToStrip = []) {
+    let [base, query] = url.split('?');
+    if (!query) return url;
+
+    let params = query.split('&').reduce((acc, param) => {
+        let [key, value] = param.split('=');
+        if (!acc.has(key) && !paramsToStrip.includes(key)) {
+            acc.set(key, value);
+        }
+        return acc;
+    }, new Map());
+if(!params.size) return base
+    return base + '?' + Array.from(params, param => param.join('=')).join('&')
+}
