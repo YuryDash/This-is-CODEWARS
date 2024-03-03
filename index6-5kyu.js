@@ -112,17 +112,48 @@
 // }
 //[3,2,3,6,4,1,2,3,2,1,2,2,2,1]), {pos:[3,7,10], peaks:[6,3,2]})
 
-function stripUrlParams(url, paramsToStrip = []) {
-    let [base, query] = url.split('?');
-    if (!query) return url;
+// function stripUrlParams(url, paramsToStrip = []) {
+//     let [base, query] = url.split('?');
+//     if (!query) return url;
+//
+//     let params = query.split('&').reduce((acc, param) => {
+//         let [key, value] = param.split('=');
+//         if (!acc.has(key) && !paramsToStrip.includes(key)) {
+//             acc.set(key, value);
+//         }
+//         return acc;
+//     }, new Map());
+// if(!params.size) return base
+//     return base + '?' + Array.from(params, param => param.join('=')).join('&')
+// }
 
-    let params = query.split('&').reduce((acc, param) => {
-        let [key, value] = param.split('=');
-        if (!acc.has(key) && !paramsToStrip.includes(key)) {
-            acc.set(key, value);
+
+function isValidWalk(walk) {
+
+    if(walk.length !== 10) return false
+
+    const all = {
+        w: [],
+        e: [],
+        s: [],
+        n: [],
+    };
+    const res = {}
+
+    walk.forEach(el => {
+        all[el].push(1);
+    });
+
+    for (let myArr in all) {
+        if (all.hasOwnProperty(myArr)) {
+            res[myArr] = all[myArr].reduce((acc, val) => acc + val, 0);
         }
-        return acc;
-    }, new Map());
-if(!params.size) return base
-    return base + '?' + Array.from(params, param => param.join('=')).join('&')
+    }
+
+    return res.w - res.e === 0 && res.n - res.s === 0;
 }
+
+console.log(isValidWalk(['n', 's', 'n', 's', 'n', 's', 'n', 's', 'n', 's']));//, 'should return true');
+console.log(isValidWalk(['w', 'e', 'w', 'e', 'w', 'e', 'w', 'e', 'w', 'e', 'w', 'e']));//, 'should return false');
+console.log(isValidWalk(['w']));//, 'should return false');
+console.log(isValidWalk(['n', 'n', 'n', 's', 'n', 's', 'n', 's', 'n', 's']));//, 'should return false');
