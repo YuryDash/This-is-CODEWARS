@@ -159,27 +159,15 @@
 // console.log(isValidWalk(['n', 'n', 'n', 's', 'n', 's', 'n', 's', 'n', 's']));//, 'should return false');
 
 // Two Sum - 6 kata
-function twoSum(numbers, target) {
-    let res;
-    for (let i = 0; i < numbers.length; i++) {
-        for (let j = 1; j <= numbers.length; j++) {
-            if (numbers[i] + numbers[j] === target && i !== j) {
-                res = [i, j]
-            }
-        }
-    }
-    return res
-}
+// function twoSum(numbers, target) {
+//     let res;
+//     for (let i = 0; i < numbers.length; i++) {
+//         for (let j = 1; j <= numbers.length; j++) {
+//             if (numbers[i] + numbers[j] === target && i !== j) {
+//                 res = [i, j]
+//             }
+//         }
+//     }
+//     return res
+// }
 
-// console.log(twoSum([
-//     666, 152, 863, -514, 901, 184,
-//     346, 920, 488, -675, -982, 34,
-//     -561, 241, -765, -749, -300, -965,
-//     816, 821, -981, 95, -862, 937,
-//     -116, -267, 165
-// ], 958))
-// //
-// // console.log(twoSum([774, 829], 11))
-//
-// console.log(twoSum([1, 2, 3], 4));
-console.log(twoSum([2, 2, 3], 4));
