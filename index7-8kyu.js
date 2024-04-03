@@ -717,3 +717,16 @@
 //In this kata you will create a function that takes a list of non-negative integers and strings and
 // returns a new list with the strings filtered out.
 // const filter_list = (l) => l.filter(el => el === Number(el))
+
+// //Categorize New Member
+// function openOrSenior(data){
+//   const res = data.map(el => {
+//     if(el[0] >= 55 && el[1] > 7){
+//       return 'Senior'
+//     } else {
+//       return 'Open'
+//     }
+//   })
+  
+//   return res
+// }
