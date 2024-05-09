@@ -173,3 +173,46 @@
 
 //============================================================================================
 
+// function nameInStr(str, name) {
+//     const compare = str.split(' ').join('').split('')
+//     const target = name.split('')
+//     let result;
+//     for (let i = 0; i < target.length; i++) {
+//         for (let j = 0; j < compare.length; j++) {
+//             if (compare[j] === target[i] && j > i) {
+//                 result = true
+//             } else {
+//                 result = false
+//             }
+//         }
+//     }
+//
+//   return result
+// }
+function nameInStr(str, name) {
+    let test = name.toLowerCase().split('');
+    str = str.toLowerCase().split('');
+    let res = [];
+    let letterChecked = 0;
+
+    function recursive() {
+        if (str.length !== 0) {
+            if (str[letterChecked] === test[0]) {
+                res.push(str[letterChecked]);
+                test.splice(0, 1);
+                str.splice(0, letterChecked + 1);
+                letterChecked = 0;
+            } else if (str.length > letterChecked) {
+                letterChecked++;
+            }
+        }
+        if (str.length !== 0 && test.length !== 0) {
+            recursive();
+        }
+    }
+
+    recursive();
+
+    return res.join('') === test.join('');
+}
+
