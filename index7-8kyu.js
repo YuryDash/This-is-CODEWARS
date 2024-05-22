@@ -727,7 +727,7 @@
 //       return 'Open'
 //     }
 //   })
-  
+
 //   return res
 // }
 //==============================================================
@@ -739,3 +739,23 @@
 //     return true
 // }
 //==============================================================
+
+// Is it a letter?
+// const isItLetter = (character) => /^[А-Яа-яA-Za-z]$/.test(character)
+//
+// console.log(isItLetter('w'));
+//==============================================================
+
+//Isograms
+// function isIsogram(str) {
+//     const arrStr = str.toLowerCase().split('')
+//     let res = true
+//     arrStr.forEach( (el, ind) => {
+//         for (let i = ind + 1; i < str.length; ++i) {
+//             if(el === arrStr[i]) {
+//                 res = false
+//             }
+//         }
+//     } )
+//     return res
+// }
