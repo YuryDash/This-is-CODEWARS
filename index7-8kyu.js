@@ -759,3 +759,20 @@
 //     } )
 //     return res
 // }
+
+//String Reordering
+
+function sentence(myArray ) {
+    let objKeys = []
+    for (const myObject of myArray) {
+        for (const [key, value] of Object.entries(myObject)) {
+            objKeys = [...objKeys, [key, value]]
+        }
+    }
+    objKeys.sort((a,b) => a[0] - b[0])
+
+    let res =  objKeys.map(el => el[1])
+    return res.join(' ')
+}
+
+console.log(sentence([{'10': 'yo'},{'1': 'dog'}, {'2': 'took'}, {'4': 'Vatsan'}, {'5': 'for'}, {'6': 'a'}, {'12': 'spin'}]));
