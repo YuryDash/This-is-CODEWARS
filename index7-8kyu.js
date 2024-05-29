@@ -762,17 +762,29 @@
 
 //String Reordering
 
-function sentence(myArray ) {
-    let objKeys = []
-    for (const myObject of myArray) {
-        for (const [key, value] of Object.entries(myObject)) {
-            objKeys = [...objKeys, [key, value]]
+// function sentence(myArray ) {
+//     let objKeys = []
+//     for (const myObject of myArray) {
+//         for (const [key, value] of Object.entries(myObject)) {
+//             objKeys = [...objKeys, [key, value]]
+//         }
+//     }
+//     objKeys.sort((a,b) => a[0] - b[0])
+//
+//     let res =  objKeys.map(el => el[1])    return res.join(' ')
+// }
+
+// Check the exam
+function checkExam(ans, res) {
+    let result = 0;
+    ans.forEach((el, index) => {
+        if (el === res[index]) {
+            result += 4;
+        } else if (res[index] === '') {
+            result += 0
+        } else {
+            result -= 1;
         }
-    }
-    objKeys.sort((a,b) => a[0] - b[0])
-
-    let res =  objKeys.map(el => el[1])
-    return res.join(' ')
+    });
+    return result < 0 ? 0 : result
 }
-
-console.log(sentence([{'10': 'yo'},{'1': 'dog'}, {'2': 'took'}, {'4': 'Vatsan'}, {'5': 'for'}, {'6': 'a'}, {'12': 'spin'}]));
